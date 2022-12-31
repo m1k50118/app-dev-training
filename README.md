@@ -29,3 +29,8 @@ https://developer.apple.com/tutorials/app-dev-training
     Label("\(scrum.lengthInMinutes)", systemImage: "clock")
                     .labelStyle(.trailingIcon)
     ```
+### Displaying data in a list
+学んだこと
+- Listの使い方
+    - listRowBackground()でセルの色を変えられる
+- forEachの使い方
