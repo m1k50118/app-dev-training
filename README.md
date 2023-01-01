@@ -105,3 +105,17 @@ extension DailyScrum {
     ]
 }
 ```
+### Creating the edit view
+学んだこと
+- @Stateの使い方
+    - ViewにBindして欲しいプロパティを使う時に宣言する
+- Formの存在
+    - Listと同じようにスクロール可能なリストが表示される
+    - データ入力に使用するViewをグループ化するのに使われる
+- Sliderの使い方
+    - Slider(value: 値, in: 範囲, step: 増減の幅)
+
+よく分からなかったこと
+- Form
+    - The Form container automatically adapts the appearance of controls when it renders on different platforms.
+    - Form コンテナは、異なるプラットフォームでレンダリングする際に、コントロールの外観を自動的に調整します。
