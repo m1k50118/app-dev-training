@@ -109,6 +109,7 @@ extension DailyScrum {
 学んだこと
 - @Stateの使い方
     - ViewにBindして欲しいプロパティを使う時に宣言する
+    - 変数を変更することでViewに変更が反映される
 - Formの存在
     - Listと同じようにスクロール可能なリストが表示される
     - データ入力に使用するViewをグループ化するのに使われる
@@ -119,3 +120,15 @@ extension DailyScrum {
 - Form
     - The Form container automatically adapts the appearance of controls when it renders on different platforms.
     - Form コンテナは、異なるプラットフォームでレンダリングする際に、コントロールの外観を自動的に調整します。
+
+### Passing data with bindings
+学んだこと
+- RoundedRectangle()の使い方
+    - 角丸四角形
+- fixedSize(horizontal: Bool, vertical: Bool)
+    - サイズをフィットさせる
+- @Bindingの使い方
+    - 親のViewのプロパティを子のViewで変更する時に使う
+    - Previewに@Bindingの値を代入するときは、.constant()を使う
+- Pickerの存在
+    - ボタンで、タップしたらリストが表示されるやつ
