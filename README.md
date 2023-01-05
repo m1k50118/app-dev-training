@@ -132,3 +132,47 @@ extension DailyScrum {
     - Previewに@Bindingの値を代入するときは、.constant()を使う
 - Pickerの存在
     - ボタンで、タップしたらリストが表示されるやつ
+
+## State management
+### Managing state and life cycle
+学んだこと
+- navigationBarTitleDisplayMode(.inline)
+    - ナビゲーションタイトルを小さくする方法
+- SwiftUIは小さいViewで大きなViewを作る
+    - 細かくパーツ分けして1つの画面を作ろう
+- ProgressViewStyleの存在
+    - プログレスバーの見た目をいい感じにするためのプロトコル
+- padding([.top, .horizontal])
+    - パディングを部分的に適用させることができる
+- Array where Element == 構造体orクラス
+    - 使い時があるか分からないけど、extensionで使えそう
+- 配列.allSatisfy{Element->Bool}の存在
+    - クロージャの中のBoolを配列が全て満たしているかどうかの判定に使う
+- 配列.reduce(初期値) {x, y in 処理(初期値と同じ型を返却する必要あり)}
+    - 配列の中身を初期値から0番目,1番目,...と削りながら進めていくイメージ
+- AVFoundationのちょっとした使い方
+    - 音源をプレイヤーに突っ込む 
+    ```swift
+      guard let url = Bundle.main.url(forResource: "ding", withExtension: "wav") else { fatalError("Failed to find sound file.") }
+      return AVPlayer(url: url)
+    ```
+    - `player.play()`で再生
+    - `player.seek(to: .zero)`でシークバーの場所を1番初めにできる（任意の場所に設定可能）
+
+頭がいいなと思ったコード  
+その1
+```swift
+// 構造体にフラグを持たせて、更新されていない値を引っ張る時に使えそう
+private var speakerNumber: Int? {
+    guard let index = speakers.firstIndex(where: { !$0.isCompleted }) else { return nil }
+    return index + 1
+}
+```
+その2
+```swift
+// allSatisfyの使い方が綺麗
+private var isLastSpeaker: Bool {
+    return speakers.dropLast().allSatisfy { $0.isCompleted }
+}
+```
+
