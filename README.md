@@ -176,3 +176,13 @@ private var isLastSpeaker: Bool {
 }
 ```
 
+## Updating app data
+学んだこと
+- @Stateと@Bindingの違い
+    - @StateはそのViewでしか使わない時が多い
+        - そのViewでしか使わないから初期化が必要
+        - @State private var hoge = Hoge()
+    - @Bindingは親のViewから値を受け取って値の更新をして親に返したりする時に使う？
+        - 親から値が渡されるので、@Bindingは初期化しない
+        - @Binding var fuga: Fuga
+    - Text(Date(), style: .date)でローカライズされた日付や時間の文章が自動的に表示される
