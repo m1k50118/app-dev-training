@@ -27,6 +27,7 @@
 		046D00E6296714A8002096A8 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D00E5296714A8002096A8 /* AVPlayer+Ding.swift */; };
 		046D00E9296714E7002096A8 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 046D00E8296714E7002096A8 /* ding.wav */; };
 		046D00EB296822B0002096A8 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D00EA296822B0002096A8 /* History.swift */; };
+		046D00ED296862CC002096A8 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D00EC296862CC002096A8 /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		046D00E5296714A8002096A8 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		046D00E8296714E7002096A8 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		046D00EA296822B0002096A8 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		046D00EC296862CC002096A8 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				046D00DB2965ABED002096A8 /* ScrumTimer.swift */,
 				046D00E5296714A8002096A8 /* AVPlayer+Ding.swift */,
 				046D00EA296822B0002096A8 /* History.swift */,
+				046D00EC296862CC002096A8 /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				046D00D6296202A2002096A8 /* ThemePicker.swift in Sources */,
 				046D00DA2965A9E7002096A8 /* ScrumProgressViewStyle.swift in Sources */,
 				046D00E0296707B8002096A8 /* MeetingFooterView.swift in Sources */,
+				046D00ED296862CC002096A8 /* ScrumStore.swift in Sources */,
 				046D00DC2965ABED002096A8 /* ScrumTimer.swift in Sources */,
 				04075AB229600410005F054C /* DailyScrum.swift in Sources */,
 				04075AB629600A9A005F054C /* TrailingIconLabelStyle.swift in Sources */,
